@@ -54,7 +54,8 @@ When setting up the JSONs, ensure you replace the following placeholders:
 | `[YOUR_INFLUXDB_IP]` | The IP where your InfluxDB is running. |
 | `[YOUR_ORG_NAME]` | Your InfluxDB Organization name. |
 | `[YOUR_BUCKET_NAME]` | The name of the bucket used for storage. |
-| `[YOUR_VT_API_KEY]` | Your personal VirusTotal API Key. |
+| `[YOUR_VIRUSTOTAL_API_KEY]` | Your personal VirusTotal API Key. |
+| `[YOUR_ALIENVAULT_API_KEY]` | Your personal AlienVault OTX API Key. |
 
 ---
 
