@@ -45,17 +45,19 @@ Create a bucket (e.g., `DNS_Security`) in your InfluxDB UI. Ensure your API toke
 ---
 
 ## ⚙️ Configuration Variables
-When setting up the JSON files, ensure you replace the following placeholders:
 
-| Placeholder | Description |
-| :--- | :--- |
-| `[YOUR_PIHOLE_IP]` | The local IP of your Pi-hole instance. |
-| `[YOUR_PIHOLE_AUTH_TOKEN]` | Found in `/etc/pihole/setupVars.conf` (WEBPASSWORD). |
-| `[YOUR_INFLUXDB_IP]` | The IP where your InfluxDB is running. |
-| `[YOUR_ORG_NAME]` | Your InfluxDB Organization name. |
-| `[YOUR_BUCKET_NAME]` | The name of the bucket used for storage. |
-| `[YOUR_VIRUSTOTAL_API_KEY]` | Your personal VirusTotal API Key. |
-| `[YOUR_ALIENVAULT_API_KEY]` | Your personal AlienVault OTX API Key. |
+To get the workflow and dashboard running, you must replace the following placeholders within the JSON files with your specific environment details:
+
+| Placeholder | Description | Where to find it |
+| :--- | :--- | :--- |
+| `[YOUR_PIHOLE_IP]` | The local IP address of your Pi-hole instance. | `hostname -I` on your Pi-hole |
+| `[YOUR_PIHOLE_AUTH_TOKEN]` | Your Pi-hole Web API password hash. | `/etc/pihole/setupVars.conf` |
+| `[YOUR_INFLUXDB_IP]` | The local IP where InfluxDB 2.x is hosted. | Your server/container IP |
+| `[YOUR_INFLUX_TOKEN]` | Your InfluxDB API Write/Read Token. | InfluxDB UI > API Tokens |
+| `[YOUR_ORG_NAME]` | Your InfluxDB Organization name. | InfluxDB UI > About/Org |
+| `[YOUR_BUCKET_NAME]` | The name of the bucket used for storage. | InfluxDB UI > Buckets |
+| `[YOUR_VIRUSTOTAL_API_KEY]` | Your personal VirusTotal API Key. | [VT User Settings](https://www.virustotal.com/) |
+| `[YOUR_ALIENVAULT_API_KEY]` | Your personal AlienVault OTX API Key. | [OTX Settings](https://otx.alienvault.com/) |
 
 ---
 
