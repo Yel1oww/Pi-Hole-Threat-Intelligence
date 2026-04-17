@@ -1,4 +1,4 @@
-# 🛡️ DNS Threat Detector
+# 🛡️ n8n Pi-hole DNS Threat Detector
 
 An automated Threat Intelligence pipeline that monitors **Pi-hole** traffic, cross-references domains against **VirusTotal** and **AlienVault OTX**, automatically blocks malicious actors, and visualizes everything in **Grafana**.
 
